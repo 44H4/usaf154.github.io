@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Games - GAMBA-CLUB - The best site in the world - Kid-made - OPEN-SOURCE</title>
-    <!-- Bootstrap -->
-	<link href="/css/styles.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
-	<style type="text/css">
-	.footer {
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-    text-decoration: none;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GAMBA-CLUB offers a collection of fun games and music curated by kids.">
+    <title>Games - GAMBA-CLUB</title>
+    
+    <!-- Load Bootstrap and jQuery from CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <style>
+        .footer {
+            font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+        }
+        .game-iframe {
+            margin-bottom: 20px; /* Adds 20px of space between each iframe */
+        }
     </style>
-  </head>
-  <body>
- <ul class="nav nav-pills">
-   <li class="nav-item"> <a class="nav-link active" href="usaf154.github.io/index.html">Home</a> </li>
-   <li class="nav-item"> <a class="nav-link" href="https://usaf154.github.io/games.html">Games</a> </li>
-   <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-     <div class="dropdown-menu"> <a class="dropdown-item" href="#">Fixer</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
-       <div class="dropdown-divider"></div>
-       <a class="dropdown-item" href="#">Fixer (dangerous)</a> </div>
-   </li>
- </ul>
-<br>
-<h2>Games!</h2>  
-  	  <div class="d-flex justify-content-center">
-  <div class="embed-responsive embed-responsive-16by9" style="max-width: 1000px;">
-    <iframe class="embed-responsive-item" src="https://www.crazygames.com/embed/stickman-supreme-duelist-2" allow="gamepad *;" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
+</head>
+<body>
 
-<div class="d-flex justify-content-center">
-  <div class="embed-responsive embed-responsive-16by9" style="max-width: 1000px;">
-    <iframe class="embed-responsive-item" src="https://www.madalingames.com/madalingames/wp-content/uploads/games/webgl/M/msc3-files/003/msc3-webgl/" allow="gamepad *;" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>	
-<div class="d-flex justify-content-center">
-  <div class="embed-responsive embed-responsive-16by9" style="max-width: 1000px;">
-    <iframe class="embed-responsive-item" src="https://www.crazygames.com/embed/funny-battle-simulator-2/" allow="gamepad *;" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>	
-	 <footer class="footer">&nbsp; </footer>
-	  <h2>Music!</h2>
-	  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4q0EanhIcdSPkfo1lFbIKg?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  <!-- body code goes here -->
+    <!-- Navigation -->
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Fixer</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Fixer (dangerous)</a>
+            </div>
+        </li>
+    </ul>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- Games Section -->
+    <h2 class="text-center mt-4">Games!</h2>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/js/popper.min.js"></script> 
-  <script src="/js/bootstrap-4.4.1.js"></script>
-  </body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Crazy Combat -->
+                <div class="embed-responsive embed-responsive-16by9 game-iframe">
+                    <iframe class="embed-responsive-item" src="https://www.crazygames.com/embed/crazy-combat" allow="gamepad *;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Sandbox City: Cars, Zombies, Ragdolls -->
+                <div class="embed-responsive embed-responsive-16by9 game-iframe">
+                    <iframe class="embed-responsive-item" src="https://www.crazygames.com/embed/sandbox-city---cars-zombies-ragdolls" allow="gamepad *;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Stickman Supreme Duelist 2 -->
+                <div class="embed-responsive embed-responsive-16by9 game-iframe">
+                    <iframe class="embed-responsive-item" src="https://www.crazygames.com/embed/stickman-supreme-duelist-2" allow="gamepad *;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Kick the Buddy -->
+                <div class="embed-responsive embed-responsive-16by9 game-iframe">
+                    <iframe class="embed-responsive-item" src="https://www.jopi.com/embed.php?game=kick-the-buddy" allow="gamepad *;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Message for broken game -->
+                <p>Sorry for the broken game, just click the link</p>
+
+                <!-- Smash Karts -->
+                <div class="embed-responsive embed-responsive-16by9 game-iframe">
+                    <iframe class="embed-responsive-item" src="https://smashkarts.io/" allow="gamepad *;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Section -->
+    <h2 class="text-center mt-5">Music!</h2>
+    <div class="container">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4q0EanhIcdSPkfo1lFbIKg?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 text-center">
+        &nbsp;
+    </footer>
+
+    <!-- Load Bootstrap JS from CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
